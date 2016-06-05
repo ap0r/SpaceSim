@@ -674,7 +674,7 @@ namespace SpaceSim
                 int elapsedYears = elapsedTime.Days / 365;
                 int elapsedDays = elapsedTime.Days % 365;
 
-                graphics.DrawString("Elapsed Time: " + string.Format("Y: {0} D: {1} H: {2} M: {3} S: {4}", elapsedYears, elapsedDays, elapsedTime.Hours, elapsedTime.Minutes, elapsedTime.Seconds), font, brush, 5, 5);
+                graphics.DrawString("Elapsed Time: " + string.Format("{0} Y, {1} D, {2} H, {3} M, {4} S", elapsedYears, elapsedDays, elapsedTime.Hours, elapsedTime.Minutes, elapsedTime.Seconds), font, brush, 5, 5);
                 graphics.DrawString("Update Speed: " + timeStep.Multiplier + " X", font, brush, 5, 35);
 
                 double altitude = target.GetRelativeAltitude();
